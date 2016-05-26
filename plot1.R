@@ -15,7 +15,7 @@ plot1 <- function(){
       twodays <- filter(pwrTbl,Date=="1/2/2007"|Date=="2/2/2007")
 ##set plotting device to png file and create the requested histogram at 480 by 480 pixels
       png("plot1.png", width=480, height=480)
-      hist(twodays$Global_active_power,col="red",main="Global Active Power", xlab="Global Active Power (kilowatts)")
+      hist(twodays$Global_active_power,col="red",main="Global Active Power ", xlab="Global Active Power (kilowatts)")
       dev.off()
 
 }
