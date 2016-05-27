@@ -17,7 +17,7 @@ plot3 <- function(){
       date_time <-strptime( paste (twodays[,Date],twodays[,Time]," "),"%d/%m/%Y %H:%M:%S")
       ##set plotting device to png file and create sub 1 plot at 480 by 480 pixels
       png("plot3.png", width=480, height=480)
-      plot(date_time,twodays[,Sub_metering_1],xlab="",ylab="Energy Submetering", type="l")
+      plot(date_time,twodays[,Sub_metering_1],xlab="",ylab="Energy sub metering", type="l")
       ## add lines for sub 2 and sub 3 in correct colors
       lines(date_time,twodays[,Sub_metering_2],col="red")
       lines(date_time,twodays[,Sub_metering_3],col="blue")
