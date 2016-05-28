@@ -19,9 +19,9 @@ plot4 <- function(){
       ##set plotting device to png file and set for 4 plots in 480 by 480 pixels
       png("plot4.png", width=480, height=480)
       old.par <- par(mfrow=c(2, 2))
-      ## place Global Active Power Histogram at R1,C1
-      hist(twodays$Global_active_power,col="red",main="Global Active Power ", xlab="Global Active Power (kilowatts)")
-      ## plot voltage versus time at R1,C2
+      ## place Global Active Power vs.Time plot at R1C1
+      plot(datetime,twodays[,Global_active_power],xlab="",ylab="Global Active Power (kilowatts)", type="l")
+      ## place voltage versus time at R1,C2
       with(twodays,plot(datetime,Voltage,type="l"))
       #place plot with three sub Metering values at R2,C1
       plot(datetime,twodays[,Sub_metering_1],xlab="",ylab="Energy sub metering", type="l")
