@@ -1,6 +1,7 @@
 plot2 <- function(){
       library(data.table)
       library(dplyr)
+     ##testing drag and drop
       ## Is data file in the working directory?
       ##  If not download and unzip it
       fileName="household_power_consumption.txt"
